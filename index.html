@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalni trener Serdjo</title>
+    <link rel="icon" href="logo.png" type="image/png">
+
+
+    <!-- Uključivanje Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Uključivanje Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tvoj Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+<body>
+
+    <!-- Zaglavlje i Meni -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Serdjo personalni trener" width="100">
+           
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#welcome" id="homeLink">Početna</a></li>
+                
+
+                <li><a href="#onama">O meni</a></li>
+
+                <li><a href="#usluge">Usluge</a></li>
+                <li><a href="#besplatne-konsultacije">Konsultacije</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+<!-- Novi deo za dobrodošlicu -->
+<section id="welcome" class="welcome-section">
+    <div class="welcome-text">
+        <h2>Počnite već danas! </h2>
+        <p>Bez obzira na to da li želite da smršate, povećate mišićnu masu ili poboljšate svoju kondiciju, ovde ste na pravom mestu</p>
+        <p>Kao vaš personalni trener, kreiraću treninge koji su u potpunosti prilagođeni vašim potrebama i ciljevima. Kroz svaki korak, biću vaš vodič, motivator i podrška – zajedno ćemo ostvariti rezultate koje ste oduvek želeli..</p>
+
+    </div>
+</section>
+
+<!-- Kombinovana sekcija sa tekstom i carousel-om -->
+<section id="hotel-carousel">
+    <div class="hotel-text">
+        <h2>Transformišite svoje telo i um uz personalizovane treninge!</h2>
+       
+
+        <p>Postavite ciljeve. Postignite rezultate. Ostanite motivisani.</p>
+        <p>Kao vaš personalni trener, moj cilj je da vam pomognem da ostvarite rezultate koji traju! Bilo da želite da smršate, povećate mišićnu masu, poboljšate kondiciju, ili jednostavno dovedete svoje telo do savršenstva, svaki trening je prilagođen vašim potrebama i ciljevima.</p>
+        <p>Zašto čekati? Krenite već danas i dajte sebi šansu da postanete najbolja verzija sebe!</p>
+
+
+    </div>
+
+    <!-- Galerija sa Bootstrap Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <!-- Indikatori -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+
+            
+    </ol>
+        <!-- Slike u carouselu -->
+        <div class="carousel-inner">
+                 <div class="carousel-item">
+                <img src="personalnitrenr3.jpg" class="d-block w-100" alt="Galerija slika 2">
+            </div>
+            <div class="carousel-item active">
+                <img src="personalnitrener2.jpg" class="d-block w-100" alt="Galerija slika 1">
+            </div>
+       
+        
+    
+        </div>
+      
+    </div>
+</section>
+
+    
+    <section id="onama" class="container mt-5">
+        <h2>O meni</h2>
+        <p>Ja sam Serdjo, sertifikovani personalni trener sa bogatim iskustvom. Moj pristup treningu je zasnovan na naučno dokazanim metodama koje su prilagođene svakom klijentu individualno. Verujem da ne postoji jedan univerzalni recept za uspeh, zbog čega kreiram personalizovane planove koji odgovaraju vašim ciljevima, potrebama i trenutnim sposobnostima.</p>
+        <p>Moja misija je da vas podržim na svakom koraku ka postizanju vaših ciljeva, bilo da želite da smršate, povećate snagu ili poboljšate zdravlje. Zajedno ćemo raditi na tome da dostignete najbolju verziju sebe i da se osetite bolje u svom telu, kroz planirane i efikasne treninge koji daju stvarne rezultate.</p>
+        <p>Samo zajedno možemo postići ono što ste uvek želeli - veća energija, bolja kondicija i samopouzdanje!"</p>
+</section>
+<section id="usluge" class="container mt-5">
+    <h2 class="section-title">Usluge</h2>
+    <div class="service-grid">
+        <!-- Prva usluga -->
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa fa-user"></i>
+            </div>
+            <h3>Personalni treninzi</h3>
+            <p>Jedan na jedan treninzi, potpuno prilagođeni vašim potrebama i ciljevima. Uz stručnu pomoć, svaki trening je izazov koji vodi ka postizanju vaših ciljeva.</p>
+        </div>
+
+        <!-- Druga usluga -->
+      <!-- Druga usluga -->
+<div class="service-box">
+    <div class="service-icon">
+        <i class="fa fa-laptop"></i> <!-- Promenjena ikona na fa-video -->
+    </div>
+    <h3>Online treninzi</h3>
+    <p>Trenirajte bilo kada i bilo gde uz moj plan i podršku. Online treninzi su idealni za one koji žele fleksibilnost u svom rasporedu.</p>
+</div>
+
+
+        <!-- Treća usluga -->
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa fa-utensils"></i>
+            </div>
+            <h3>Plan ishrane</h3>
+            <p>Nutritivni vodič koji će vam pomoći da ostvarite željene rezultate. Prilagođeni planovi ishrane za postizanje vaših ciljeva, bilo da mršavite ili gradite mišiće.</p>
+        </div>
+
+        <!-- Četvrta usluga -->
+        <div class="service-box">
+            <div class="service-icon">
+                <i class="fa fa-heartbeat"></i>
+            </div>
+            <h3>Kondicioni treninzi</h3>
+            <p>Treninzi za sportiste i rekreativce koji žele da postignu vrhunsku fizičku formu. Povećajte snagu, izdržljivost i kondiciju sa specijalizovanim planovima.</p>
+        </div>
+    </div>
+</section>
+<section id="besplatne-konsultacije" class="container mt-5">
+    <h2 class="sectiontitle">Prijavite se za besplatne konsultacije</h2>
+    <p>Želite da postignete svoje fitness ciljeve, ali niste sigurni kako da počnete? Prijavite se za besplatne konsultacije i dobijte personalizovan plan koji je prilagođen baš vama! Na konsultacijama ćemo razgovarati o vašim ciljevima i kako da ih postignemo zajedno.</p>
+    
+    <!-- Forma za prijavu -->
+    <form id="consultation-form" class="form" action="submit_form.php" method="POST">
+        <div class="form-group">
+            <label for="name">Ime i prezime</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Unesite vaše ime i prezime" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Unesite vašu email adresu" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" class="form-control" rows="6" placeholder="Napišite šta vas zanima" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Prijavite se sada</button>
+    </form>
+</section>
+
+
+   
+
+<section id="kontakt" class="container mt-5">
+    <h2 class="section-title">Kontakt informacije</h2>
+    
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fa fa-envelope"></i>
+            <p>Email: <a href="mailto:burgazisergin@gmail.com">burgazisergin@gmail.com</a></p>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fa fa-phone"></i>
+            <p>Telefon: <a href="tel:+381637025553">+381 63 702 5553</a></p>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fa fa-map-marker-alt"></i>
+            <p>Lokacija: Kraljevo</p>
+        </div>
+        
+        <div class="contact-item">
+            <a href="https://www.instagram.com/s_e_r_d_j_o__/" target="_blank" class="instagram-btn">
+                <i class="fa fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <!-- Footer -->
+    <footer id="footer">
+ 
+        <div class="footer-legal">
+            <p>&copy; 2025 Personalni trener Serdjo. Sva prava zadržana.</p>
+            <a href="#privacy-policy">Politika privatnosti</a> | <a href="#terms-of-use">Uslovi korišćenja</a>
+        </div>
+    
+  
+    </footer>
+    
+
+    <!-- Uključivanje jQuery, Popper.js i Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Tvoj Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
