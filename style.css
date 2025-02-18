@@ -107,7 +107,7 @@ header .logo span {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 100px; /* Postavi meni tačno ispod zaglavlja */
+        top: 90px; /* Postavi meni tačno ispod zaglavlja */
         left: 0;
         background-color: black;
     }
