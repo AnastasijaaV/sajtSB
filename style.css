@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 100px;
+    height: 90px;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -36,11 +36,11 @@ header .logo {
 }
 
 header .logo img {
-    height: 100px; /* Postavi visinu loga */
+    height: 40px; /* Postavi visinu loga */
     width: auto;
     margin-right: 0px; /* Razmak između loga i natpisa */
-    margin-left: 10px;
-}
+    margin-left: 20px;
+    }
 
 header .logo span {
     font-size: 24px; /* Veličina fonta za natpis */
@@ -338,7 +338,7 @@ header .logo span {
 }
 
 .instagram-btn i {
-    font-size: 1.5rem;  /* Postavi veličinu ikone */
+    font-size: 2rem;  /* Postavi veličinu ikone */
     margin-right: 10px; /* Razmak između ikone i teksta */
     color: #fff; /* Bela boja ikone */
 }
@@ -398,7 +398,7 @@ html {
 /* Stil za sekciju dobrodošlice */
 #welcome {
     position: relative;
-    background-image: url('personalnitrener.jpg');
+    background-image: url('naslovna2.jpg');
     background-size: cover;
     background-position: center center;
     height: 60vh;  /* Visina sekcije */
@@ -409,7 +409,7 @@ html {
     color: white;
     padding: 20px;
     overflow: hidden;
-    margin-top: 100px;  /* Uklanjanje razmaka između menija i sekcije */
+    margin-top: 90px;  /* Uklanjanje razmaka između menija i sekcije */
     margin-bottom: 0;  /* Takođe možemo ukloniti marginu sa dna */
 }
 
