@@ -133,31 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-//proveri ovu fjuuuuu
-document.addEventListener('DOMContentLoaded', function() {
-    const kontaktLink = document.getElementById('kontaktLink');  // ID za kontakt link
-    const content = document.getElementById('content');  // Glavni sadržaj
 
-    // Funkcija koja učitava sadržaj za Kontakt stranicu
-    function loadContact() {
-        content.innerHTML = `
-            <section id="kontakt" class="container mt-5">
-                <h2>Kontakt informacije</h2>
-                <div class="contact-details">
-                    <p><strong>Telefon:</strong> <a href="tel:+0658478076">065/8478076</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:info@studenicki-kamen.com">info@studenicki-kamen.com</a></p>
-                    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/studenicki.kamen84/" target="_blank">studenicki.kamen84</a></p>
-                </div>
-                <div class="map">
-                    <h3>Lokacija</h3>
-                    <img src="image.png" alt="Mapa lokacije" class="location-map">
-                </div>
-            </section>
-        `;
-    }
-
- 
-});
 document.addEventListener('DOMContentLoaded', function() {
     const productImages = document.querySelectorAll('.product-image');
 
@@ -209,13 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Dodajemo listener za skrolovanje
     window.addEventListener('scroll', checkVisibility);
 });
-document.addEventListener('scroll', function() {
-    const welcomeSection = document.getElementById('welcome');
-    const scrollPosition = window.scrollY;
-    const offset = scrollPosition * 0.5; // Brzina pomeranja pozadine, možete prilagoditi broj
 
-    welcomeSection.style.backgroundPosition = `center ${offset}px`;  // Pomeranje pozadinske slike
-});
 document.addEventListener('scroll', function() {
     const welcomeSection = document.getElementById('welcome');
     const scrollPosition = window.scrollY;
@@ -247,14 +217,8 @@ document.getElementById('homeLink').addEventListener('click', function(e) {
         });
     }, 1000);  // Odlaganje od 500ms kako bi efekat bio vidljiviji
 });
-//novooo
-document.getElementById('consultation-form').addEventListener('submit', function(event) {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
 
-    if (!name || !email || !message) {
-        event.preventDefault(); // Sprečava slanje forme
-        alert("Molimo vas da popunite sva polja!");
-    }
-});
+function showPhoneNumber() {
+    const phoneNumber = document.getElementById('phone-number');
+    phoneNumber.style.display = 'block';  // Prikazuje broj telefona
+}

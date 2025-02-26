@@ -730,15 +730,15 @@ html {
     }
 }
 /* Sekcija za besplatne konsultacije */
-/* Sekcija za besplatne konsultacije sa pozadinskom slikom */
+/* Stilizacija sekcije za besplatne konsultacije */
 #besplatne-konsultacije {
     color: white;
     padding: 70px 0;
-    background-image: url('personalnitrener.jpg'); /* Postavi sliku kao pozadinu */
-    background-size: cover; /* Slika će pokriti celu sekciju */
-    background-position: center center; /* Slika će biti centrirana */
-    background-attachment: fixed; /* Efekat paralakse, slika ostaje statična pri skrolovanju */
-    position: relative; /* Da bismo dodali overlay */
+    background-image: url('personalnitrener.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -751,73 +751,21 @@ html {
     left: 0; 
     right: 0; 
     bottom: 0; 
-    background: rgba(0, 0, 0, 0.5); /* Poluprovidna crna boja za bolji kontrast */
+    background: rgba(0, 0, 0, 0.5); 
     border-radius: 10px; 
-    z-index: -1; /* Overlay ide iza sadržaja */
+    z-index: -1;
 }
 
 /* Naslov sekcije */
 .sectiontitle {
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #fff; /* Bela boja zbog pozadinske slike */
+    color: #fff;
     font-weight: bold;
-    
 }
 
-/* Stilizacija forme */
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
-    
-    padding: 30px;
-   
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    margin-top: 40px;
-}
-
-/* Form controls */
-.form-group {
-    width: 100%;
-    margin-bottom: 25px;
-}
-
-.form-group label {
-    font-size: 1rem;
-    color: white;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: 500;
-}
-
-.form-control {
-    width: 100%;
-    padding: 18px; /* Povećali smo visinu polja */
-    font-size: 1.1rem; /* Veći font za bolju čitljivost */
-    border: 2px solid #ddd;
-    border-radius: 10px; /* Zaobljene ivice */
-    color: #333;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.form-control:focus {
-    border-color: #caff00;
-    outline: none;
-}
-
-/* Hover efekti na inputima */
-.form-control:hover {
-    border-color: #caff00;
-}
-
-/* Dugme za prijavu */
-.btn-submit {
+/* Stilizacija pulsirajućeg dugmeta */
+.pulse-btn {
     background-color: #caff00;
     color: #000;
     padding: 15px 30px;
@@ -825,27 +773,38 @@ html {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    width: 100%;
+    width: auto;
     margin-top: 20px;
+    animation: pulse 1.5s infinite;
+    transition: transform 0.2s ease;
 }
 
-.btn-submit:hover {
-    background-color: #a8cc00;
-    transform: scale(1.05);
+.pulse-btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Stilizacija za broj telefona */
+#phone-number {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #caff00;
 }
 
 /* Stilizacija za mobilne uređaje */
 @media (max-width: 768px) {
-    .form {
-        padding: 30px;
-    }
-
-    .form-control {
-        font-size: 1rem;
-    }
-
-    .btn-submit {
+    .pulse-btn {
         padding: 12px 25px;
     }
 }
